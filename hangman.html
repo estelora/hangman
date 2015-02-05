@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Cookie|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/hangman.css">
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <title>Mousetrap Words</title>
+</head>
+<body>
+
+  <div class="game-screen">
+    <div class= "title-holder">
+      <img class="title center hvr-sink" src="img/mouse-title.jpg" alt="title">
+      <div class="center text">
+        <!-- <p>Woe to the mouse who gets stuck under!</p > -->
+      </div>
+    </div>
+    <div class="content text-center center"><p class ="directions">
+      Solve the puzzle or in the trap you go!</p>
+      <h2 class= "hidden-word-display"></h2>
+      <span class="turns-remaining">
+        Chances left: <span class="turn-count">8</span>
+      </span>
+      <span class="displayWord ">
+      </span>
+      <input class="user-letter" type = "text" maxlength ="1">
+      <button class= "button btn"onclick ="onUserGuess()">Guess</button>
+      <span class="dash-display"></span>
+    </div>
+
+</body>
+  <script src="js/hangman.js"></script>
+</html>
